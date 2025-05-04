@@ -9,7 +9,7 @@ function FAQCardComponent({ question, answer }) {
   }
   return (
     <>
-      <div className={`FAQCardComponent border ${isOpen ? "open" : ""}`} data-aos="fade-up">
+      <div className={`FAQCardComponent border ${isOpen ? "open" : ""}`}>
         <div className="question">
           <h3> {question} </h3>
           {isOpen &&
