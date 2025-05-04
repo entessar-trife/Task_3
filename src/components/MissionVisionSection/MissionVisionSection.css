@@ -1,0 +1,98 @@
+.missionVisionSection .titleComponent h3 {
+  font-size: 18px;
+}
+
+.MissionVisionCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.MissionVisionCards .cardComponent {
+  padding: 60px;
+  width: 48.1203008%;
+}
+
+.MissionVisionCards .cardComponent .cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.MissionVisionCards .cardComponent .cardTitle h3 {
+  font-family: var(--raleway-font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--gray-10);
+}
+
+.MissionVisionCards .cardComponent .cardTitle img {
+  border: none;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .MissionVisionCards {
+    gap: 40px;
+  }
+
+  .MissionVisionCards .cardComponent {
+    padding: 50px;
+    width: 48.4375%;
+  }
+
+  .MissionVisionCards .cardComponent .cardTitle {
+    margin-bottom: 50px;
+  }
+
+  .MissionVisionCards .cardComponent .cardTitle h3 {
+    font-size: 38px;
+  }
+
+  .MissionVisionCards .cardComponent:first-child .cardTitle img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .MissionVisionCards .cardComponent:nth-child(2) .cardTitle img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .MissionVisionCards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .MissionVisionCards .cardComponent {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .MissionVisionCards .cardComponent .cardTitle {
+    margin-bottom: 40px;
+  }
+
+  .MissionVisionCards .cardComponent .cardTitle h3 {
+    font-size: 30px;
+  }
+
+  .MissionVisionCards .cardComponent:first-child .cardTitle img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .MissionVisionCards .cardComponent:nth-child(2) .cardTitle img {
+    width: 66px;
+    height: 50px;
+  }
+}

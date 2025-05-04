@@ -1,0 +1,102 @@
+.navigateCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.navigateCards .cardComponent {
+  width: 48.433584%;
+  padding: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.navigateCards .cardComponent img {
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 172px;
+  width: 79.301423%
+}
+
+.navigateCards .cardComponent h3 {
+  font-family: var(--raleway-font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--gray-10);
+  margin-bottom: 30px;
+}
+
+.navigateCards .cardComponent p {
+  color: var(--gray-30);
+  margin-top: 100px;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .navigateCards {
+    gap: 40px;
+  }
+
+  .navigateCards .cardComponent {
+    width: 48.4375%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navigateCards .cardComponent img {
+    top: 128px;
+    width: 80.6451613%;
+  }
+
+  .navigateCards .cardComponent h3 {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  .navigateCards .cardComponent p {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:1439px) {
+  .navigateCards {
+    gap: 35px;
+  }
+
+  .navigateCards .cardComponent {
+    width: 47.4375%;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .navigateCards .cardComponent {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .navigateCards .cardComponent img {
+    top: 96px;
+    height: 20px;
+    /* width: 80.6451613%; */
+  }
+
+  .navigateCards .cardComponent h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .navigateCards .cardComponent p {
+    margin-top: 30px;
+  }
+}

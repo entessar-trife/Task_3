@@ -1,0 +1,228 @@
+.heroComponent {
+  padding-top: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.heroComponent img,
+.heroComponent .rightSide {
+  width: 47.9323308%;
+}
+
+.heroComponent .title {
+  font-family: var(--outfit-font);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray-15);
+  position: relative;
+}
+
+.heroComponent .title:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray-15);
+  bottom: -6px;
+  left: 0;
+}
+
+.heroComponent h2 {
+  font-family: var(--raleway-font);
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 130%;
+  color: var(--gray-10);
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.heroComponent h2 span {
+  color: var(--Orange-65);
+}
+
+.heroComponent p {
+  margin-bottom: 60px;
+  color: var(--gray-20);
+}
+
+.heroCount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+  background-color: var(--Orange-95);
+  padding: 24px 50px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 1px #FFBE99;
+}
+
+.heroCount .counter {
+  display: flex;
+  flex-direction: column;
+  color: var(--gray-15);
+  position: relative;
+}
+
+.heroCount .count span {
+  font-family: var(--outfit-font);
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.heroCount span {
+  font-family: var(--outfit-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .heroComponent {
+    padding-top: 204px;
+    gap: 50px;
+  }
+
+  .heroComponent img,
+  .heroComponent .rightSide {
+    width: 48.046875%;
+  }
+
+  .heroComponent .title {
+    font-size: 18px;
+  }
+
+  .heroComponent h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .heroComponent p {
+    margin-bottom: 50px;
+  }
+
+  .heroCount {
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0 1px #FFBE99;
+    gap: 10px;
+  }
+
+  .heroCount .count span {
+    font-size: 34px;
+  }
+
+  .heroCount span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:1439px) {
+  .heroComponent {
+    gap: 30px;
+  }
+
+  .heroCount {
+    padding: 10px 20px;
+  }
+
+  .heroCount .count span {
+    font-size: 25px;
+  }
+
+  .heroCount span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:1200px) {
+  .heroComponent h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .heroComponent p {
+    margin-bottom: 30px;
+  }
+
+  .heroCount .count span {
+    font-size: 20px;
+  }
+
+  .heroCount span {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .heroComponent {
+    padding-top: 211px;
+    gap: 40px;
+  }
+
+  .heroComponent img,
+  .heroComponent .rightSide {
+    width: 100%;
+  }
+
+  .heroComponent .rightSide,
+  .heroCount {
+    text-align: center;
+  }
+
+  .heroComponent .title {
+    font-size: 16px;
+  }
+
+  .heroComponent h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .heroComponent p {
+    margin-bottom: 40px;
+  }
+
+  .heroCount {
+    padding: 40px;
+    box-shadow: 4px 4px 0 1px #FFBE99;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .heroCount .counter {
+    width: 100%;
+  }
+
+  .heroCount .counter:not(:nth-child(3)):after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--gray-15);
+    bottom: -20px;
+    left: 0;
+  }
+
+  .heroCount .count span {
+    font-size: 34px;
+  }
+
+  .heroCount span {
+    font-size: 16px;
+  }
+}

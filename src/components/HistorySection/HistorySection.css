@@ -1,0 +1,74 @@
+.historyCards {
+  background-color: var(--white-color);
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.historyCards:before {
+  content: "";
+  position: absolute;
+  background-color: var(--black-color);
+  outline: 5px solid var(--Orange-80);
+  width: 2px;
+  height: 62%;
+  top: 19%;
+  left: 9rem;
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .historyCards {
+    padding: 100px;
+    gap: 80px;
+  }
+
+  .historyCards:before {
+    left: 6rem;
+  }
+}
+
+@media (max-width:1439px) {
+  .historyCards:before {
+    height: 64%;
+  }
+}
+
+@media (max-width:992px) {
+  .historyCards {
+    padding: 50px;
+  }
+
+  .historyCards:before {
+    left: 2.5rem;
+    top: 8%;
+    height: 74%;
+  }
+}
+
+@media (max-width:768px) {
+
+  .historyCards {
+    padding: 50px 20px 50px 43px;
+    gap: 50px;
+  }
+
+  .historyCards:before {
+    left: 32px;
+    top: 8%;
+    height: 73%;
+  }
+
+}
+
+@media (max-width:540px) {
+
+  .historyCards:before {
+    height: 74%;
+    top: 6%;
+  }
+}

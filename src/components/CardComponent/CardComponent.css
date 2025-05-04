@@ -1,0 +1,80 @@
+.cardComponent {
+  background-color: var(--white-color);
+  transition: .5s ease-in-out;
+}
+
+.cardComponent:hover {
+  transform: scale(1.1);
+}
+
+.stars {
+  color: var(--Orange-65);
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cardComponent button {
+  width: 100%;
+  padding: 18px;
+  background-color: var(--Orange-90);
+  border-radius: 10px;
+  margin-top: 80px;
+  box-shadow: 4px 4px 0 2px #1E1E1E;
+  transition: .3s ease-in-out;
+}
+
+.cardComponent button:hover {
+  background-color: var(--Orange-65);
+  transform: translateY(-2px);
+}
+
+.cardComponent button a {
+  color: var(--gray-20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .stars {
+    margin: 24px 0;
+    gap: 4px;
+  }
+
+  .stars svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cardComponent button {
+    border-radius: 8px;
+    margin-top: 60px;
+    padding: 16px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .stars {
+    margin: 20px 0;
+  }
+
+  .cardComponent button {
+    border-radius: 6px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 0 1px #1E1E1E;
+  }
+}

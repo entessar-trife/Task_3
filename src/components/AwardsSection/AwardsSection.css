@@ -1,0 +1,102 @@
+.awardsSection .titleComponent p {
+  width: 74.937%;
+}
+
+.awardsCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.moreAwards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.moreAwards span {
+  position: relative;
+  cursor: pointer;
+}
+
+.moreAwards span::before {
+  content: "";
+  position: absolute;
+  background-color: var(--Orange-65);
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  transition: .3s;
+}
+
+.moreAwards span:hover:before {
+  width: 100%;
+}
+
+.moreAwards span {
+  font-family: var(--raleway-font);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--gray-10);
+}
+
+.awardsSection .awardsSectionBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.awardsSection button {
+  border-radius: 8px;
+  width: 58px;
+  height: 58px;
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.awardsSection button:hover {
+  background-color: var(--Orange-65);
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .awardsSection .titleComponent p {
+    width: 76.5625%;
+  }
+
+  .awardsCards {
+    gap: 30px;
+  }
+
+  .moreAwards {
+    margin-top: 40px;
+  }
+
+  .moreAwards span {
+    font-size: 18px;
+  }
+
+  .awardsSection .awardsSectionBtns {
+    gap: 16px;
+  }
+
+  .awardsSection button {
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .moreAwards {
+    margin-top: 30px;
+  }
+}

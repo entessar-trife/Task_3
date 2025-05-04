@@ -1,0 +1,157 @@
+.teamMemberCard {
+  width: 48.433584%;
+  background-color: var(--white-color);
+  padding: 50px;
+}
+
+.teamMemberCard .memberCardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.teamMemberCard .memberCardTitle .memberName {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.teamMemberCard .memberCardTitle .memberName img {
+  width: 100px;
+  height: 100px;
+}
+
+.teamMemberCard .memberCardTitle .memberName h4 {
+  font-family: var(--raleway-font);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 150%;
+  color: var(--gray-20);
+}
+
+.teamMemberCard .memberCardTitle svg {
+  background-color: var(--Orange-90);
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.teamMemberCard .memberCardDesc {
+  background-color: var(--Orange-97);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.teamMemberCard .memberCardDesc h5 {
+  font-family: var(--outfit-font);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 20px;
+  color: var(--gray-20);
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .teamMemberCard {
+    width: 48.4375%;
+    padding: 40px;
+  }
+
+  .teamMemberCard .memberCardTitle {
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName {
+    gap: 12px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName h4 {
+    font-size: 24px;
+  }
+
+  .teamMemberCard .memberCardTitle svg {
+    width: 48px;
+    height: 48px;
+    padding: 14px;
+    border-radius: 6px;
+  }
+
+  .teamMemberCard .memberCardDesc {
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .teamMemberCard .memberCardDesc h5 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .teamMemberCard {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .teamMemberCard .memberCardTitle,
+  .teamMemberCard .memberCardTitle .memberName {
+    gap: 10px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName h4 {
+    font-size: 20px;
+  }
+
+  .teamMemberCard .memberCardDesc {
+    padding: 20px;
+  }
+
+  .teamMemberCard .memberCardDesc h5 {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width:389px) {
+  .teamMemberCard {
+    padding: 25px;
+    box-shadow: 2px 2px 0 2px #1E1E1E
+  }
+
+  .teamMemberCard .memberCardDesc {
+    padding: 15px;
+  }
+
+  .teamMemberCard .memberCardTitle .memberName h4,
+  .teamMemberCard .memberCardDesc h5 {
+    font-size: 16px;
+  }
+
+  .teamMemberCard .memberCardTitle svg {
+    padding: 10px;
+  }
+
+  .teamMemberCard .memberCardDesc p {
+    font-size: 14px;
+  }
+}

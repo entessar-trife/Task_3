@@ -1,0 +1,114 @@
+.FAQCardComponent {
+  padding: 40px;
+  transition: .3s ease-in-out;
+}
+
+.FAQCardComponent:hover {
+  box-shadow: 2px 2px 8px 8px rgba(209, 206, 206, 0.601);
+}
+
+.FAQCardComponent .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.FAQCardComponent.open {
+  background-color: var(--white-color);
+}
+
+.FAQCardComponent .question h3 {
+  font-family: var(--outfit-font);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  color: var(--gray-15);
+}
+
+.FAQCardComponent.open .question h3 {
+  padding-bottom: 24px;
+}
+
+.FAQCardComponent .question svg,
+.FAQCardComponent .question svg {
+  background-color: var(--Orange-97);
+  padding: 8px;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.FAQCardComponent .question svg:hover,
+.FAQCardComponent .question svg:hover {
+  background-color: var(--Orange-95);
+}
+
+.answer {
+  padding-top: 24px;
+  width: 90.54474%;
+  color: var(--gray-20);
+  border-top: 2px solid var(--gray-15);
+}
+
+
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .FAQCardComponent {
+    padding: 34px 30px;
+  }
+
+  .FAQCardComponent .question {
+    gap: 24px;
+  }
+
+  .FAQCardComponent .question h3 {
+    font-size: 18px;
+  }
+
+  .FAQCardComponent.open .question h3 {
+    padding-bottom: 20px;
+  }
+
+  .FAQCardComponent .question svg,
+  .FAQCardComponent .question svg {
+    padding: 6px;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .answer {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .FAQCardComponent {
+    padding: 30px 24px;
+  }
+
+  .FAQCardComponent .question {
+    gap: 20px;
+  }
+
+  .FAQCardComponent .question h3 {
+    width: 90%;
+  }
+
+  .FAQCardComponent.open .question h3 {
+    padding-bottom: 24px;
+  }
+
+  .answer {
+    padding-top: 24px;
+  }
+}

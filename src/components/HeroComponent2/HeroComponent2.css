@@ -1,0 +1,116 @@
+.heroSection {
+  padding: 230px 50px 200px 50px;
+}
+
+.heroSection img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heroComponent2 {
+  position: relative;
+  background-color: var(--white-color);
+  padding: 150px 120px;
+  box-shadow: 8px 8px 0 1px #1E1E1E;
+}
+
+.heroSection .titleComponent {
+  margin-bottom: 0;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.heroSection .titleComponent .smallTitle {
+  margin: 0;
+}
+
+.heroSection .titleComponent h2,
+.heroSection .titleComponent p {
+  text-align: start;
+}
+
+.heroSection .titleComponent h2 {
+  padding: 14px 0 0 0;
+}
+
+.heroSection .titleComponent p {
+  width: 65.7423%;
+}
+
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .heroSection {
+    padding: 184px 80px 150px 80px;
+  }
+
+  .heroSection img {
+    width: 137px;
+    height: 137px;
+  }
+
+  .heroComponent2 {
+    padding: 100px 80px;
+    box-shadow: 6px 6px 0 1px #1E1E1E;
+  }
+
+  .heroSection .titleComponent h2 {
+    padding: 10px 0 0 0;
+    font-size: 38px;
+  }
+
+  .heroSection .titleComponent p {
+    width: 61.155389%;
+  }
+}
+
+@media (max-width:1439px) {
+  .heroSection .titleComponent p {
+    width: 100%;
+  }
+
+  .heroSection .titleComponent h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .heroSection {
+    padding: 201px 16px 80px 16px;
+  }
+
+  .heroSection img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .heroComponent2 {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .heroSection .titleComponent {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .heroComponent2 .titleComponent .smallTitle {
+    margin: 0 auto;
+  }
+
+  .heroSection .titleComponent h2,
+  .heroSection .titleComponent p {
+    text-align: center;
+  }
+
+  .heroSection .titleComponent h2 {
+    font-size: 28px;
+  }
+}

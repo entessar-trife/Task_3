@@ -1,0 +1,173 @@
+.historyCardComponent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+}
+
+.historyShape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30.34px 50px;
+}
+
+.historyShape img {
+  width: 87.31px;
+  height: 87.31px;
+}
+
+.historyShape h6 {
+  font-family: var(--raleway-font);
+  font-size: 68px;
+  font-weight: 700;
+  list-style: 130%;
+  color: var(--gray-10);
+}
+
+.historyContent {
+  width: 61.5501543%;
+}
+
+.historyContent h6 {
+  font-family: var(--raleway-font);
+  font-weight: 700;
+  font-size: 28px;
+  list-style: 130%;
+  color: var(--gray-10);
+  margin-bottom: 20px;
+}
+
+.cardLine {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 55px;
+  background-color: var(--black-color);
+  height: 2px;
+  outline: 5px solid var(--Orange-80);
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--white-color);
+  border: 2px solid var(--black-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line::before {
+  left: -20px;
+}
+
+.line::after {
+  right: -20px;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .historyCardComponent {
+    gap: 40px;
+  }
+
+  .historyShape {
+    padding: 25px 34px;
+  }
+
+  .line {
+    width: 44px;
+  }
+
+  .historyShape img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .historyShape h6 {
+    font-size: 48px;
+  }
+
+  .historyContent {
+    width: 65.5555%;
+  }
+
+  .historyContent h6 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+}
+
+
+@media (max-width:992px) {
+  .historyCardComponent {
+    flex-wrap: wrap;
+  }
+
+  .historyContent {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .historyCardComponent {
+    gap: 30px;
+  }
+
+  .historyShape {
+    padding: 20.5px 24px;
+  }
+
+
+  .historyShape img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .historyShape h6 {
+    font-size: 38px;
+  }
+
+  .historyContent h6 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width:540px) {
+  .line {
+    width: 22px;
+  }
+
+  .historyContent {
+    margin-left: 23px;
+  }
+
+}
+
+@media (max-width:389px) {
+  .historyShape {
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .historyShape img {
+    width: 40px;
+    height: 40px;
+  }
+}

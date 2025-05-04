@@ -1,0 +1,170 @@
+.gallerySectionImages {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: -200px;
+}
+
+.gallerySectionImages img {
+  width: 100%;
+}
+
+.galleryCardComponent {
+  background-color: var(--white-color);
+  padding: 50px;
+}
+
+.galleryCardComponent:not(:last-child) {
+  margin-bottom: 295px;
+}
+
+.galleryCardComponent .galleryCardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.galleryCardComponent .galleryCardTitle h6 {
+  font-family: var(--raleway-font);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--gray-10);
+  width: 100%;
+}
+
+.galleryCardTitle .gallerySectionBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.galleryCardTitle .gallerySectionBtns button {
+  border-radius: 8px;
+  width: 58px;
+  height: 58px;
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.galleryCardComponent p {
+  font-family: var(--outfit-font);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray-30);
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .gallerySectionImages {
+    margin-top: -155px;
+  }
+
+  .gallerySectionImages img {
+    height: 234px;
+    border-radius: 10px;
+  }
+
+  .galleryCardComponent {
+    padding: 40px;
+  }
+
+  .galleryCardComponent:not(:last-child) {
+    margin-bottom: 212px;
+  }
+
+  .galleryCardComponent .galleryCardTitle {
+    margin: 38px 0 30px 0;
+  }
+
+  .galleryCardComponent .galleryCardTitle h6 {
+    font-size: 34px;
+  }
+
+  .galleryCardTitle .gallerySectionBtns {
+    gap: 16px;
+  }
+
+  .galleryCardTitle .gallerySectionBtns button {
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    transition: .3s ease-in-out;
+  }
+
+  .galleryCardTitle .gallerySectionBtns button:hover {
+    background-color: var(--Orange-65);
+  }
+
+  .galleryCardComponent p {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width:1439px) {
+  .gallerySectionImages {
+    gap: 20px;
+  }
+
+  .gallerySectionImages img {
+    width: 23%;
+    height: auto;
+  }
+}
+
+@media (max-width:992px) {
+  .gallerySectionImages img {
+    width: 49%;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .gallerySectionImages {
+    margin-top: -165px;
+  }
+
+  .gallerySectionImages img {
+    height: 203px;
+    width: 100%;
+  }
+
+  .galleryCardComponent {
+    padding: 30px;
+  }
+
+  .galleryCardComponent:not(:last-child) {
+    margin-bottom: 197px;
+  }
+
+  .galleryCardComponent .galleryCardTitle {
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+    margin: 34px 0 20px 0;
+  }
+
+  .galleryCardComponent .galleryCardTitle h6 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 28px;
+  }
+
+  .galleryCardTitle .gallerySectionBtns {
+    margin: 0 auto;
+  }
+
+  .galleryCardComponent p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+}

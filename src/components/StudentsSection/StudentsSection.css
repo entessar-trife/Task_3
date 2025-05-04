@@ -1,0 +1,21 @@
+.studentsCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .studentsCards {
+    gap: 40px;
+  }
+}
+
+@media (max-width:1439px) {
+  .studentsCards {
+    gap: 25px;
+  }
+}

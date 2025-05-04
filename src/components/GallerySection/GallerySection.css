@@ -1,0 +1,79 @@
+.gallerySection {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.filters {
+  width: 61.0275689%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 295px;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filters li {
+  background-color: var(--white-color);
+  font-family: var(--outfit-font);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  color: var(--gray-10);
+  padding: 14px 20px;
+  border: 2px solid var(--gray-20);
+  border-radius: 8px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filters li.active {
+  background-color: var(--Orange-95);
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .filters {
+    width: 60.15625%;
+    gap: 10px;
+    margin-bottom: 212px;
+  }
+
+  .filters li {
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width:1439px) {
+  .filters {
+    width: 80%;
+  }
+
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .filters {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .filters li {
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+  }
+}

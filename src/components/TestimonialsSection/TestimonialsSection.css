@@ -1,0 +1,137 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.slider button {
+  border-radius: 8px;
+  width: 58px;
+  height: 58px;
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.slider button:hover {
+  background-color: var(--Orange-65);
+}
+
+.slider .cardComponent {
+  text-align: center;
+  width: 26.649749%;
+  height: 462px;
+  padding: 50px;
+}
+
+.slider .cardComponent img {
+  background-color: var(--Orange-97);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid var(--gray-20);
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.slider .cardComponent h3 {
+  font-family: var(--outfit-font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.slider .cardComponent p {
+  color: var(--gray-20);
+}
+
+.mobileBtns {
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .testimonialsSection .titleComponent p {
+    width: 68.4375%;
+  }
+
+  .slider {
+    gap: 40px;
+  }
+
+  .slider button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .slider .cardComponent {
+    width: 26.5626%;
+    height: 374px;
+    padding: 40px;
+  }
+
+  .slider .cardComponent img {
+    width: 66px;
+    height: 66px;
+    padding: 9.5px;
+    margin-bottom: 10px;
+  }
+
+  .slider .cardComponent h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:1439px) {
+  .slider {
+    gap: 30px;
+  }
+
+  .slider .cardComponent {
+    height: 410px;
+  }
+}
+
+@media (max-width:1200px) {
+  .slider {
+    gap: 20px;
+  }
+
+  .slider .cardComponent {
+    height: 450px;
+  }
+
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .slider {
+    gap: 40px;
+  }
+
+  .slider .cardComponent {
+    width: 100%;
+    padding: 30px;
+    height: 322px;
+  }
+
+  .testimonialsSection .titleComponent p {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:389px) {
+  .slider .cardComponent {
+    height: 375px;
+  }
+
+}

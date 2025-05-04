@@ -1,0 +1,110 @@
+.banner {
+  width: 94.7395833%;
+  height: 58px;
+  border-radius: 8px;
+  padding: 14px 0;
+  background-color: var(--Orange-90);
+  overflow: hidden;
+  position: fixed;
+  left: 2.65625%;
+  top: 18px;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner.scrolled {
+  display: none;
+}
+
+.banner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--gray-15);
+  transition: .5s ease-in-out;
+}
+
+.banner a:hover {
+  transform: translateY(-5px);
+}
+
+.banner img {
+  position: absolute;
+}
+
+.design_1,
+.design_2,
+.design_3,
+.design_4 {
+  z-index: -2;
+}
+
+.design_1 {
+  top: 0;
+  left: 0;
+}
+
+.design_2 {
+  left: 521.33px;
+  top: 0;
+  width: 72.41px;
+}
+
+.design_3 {
+  right: 564.72px;
+  bottom: 0;
+  width: 39.56px;
+}
+
+.design_4 {
+  right: 0;
+  top: 0;
+}
+
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+  .banner {
+    width: 92.986111%;
+    height: 48px;
+    border-radius: 6px;
+    padding: 12px 0;
+    left: 3.54166%;
+    top: 16px;
+  }
+
+  .design_2 {
+    left: 292.32px;
+    width: 50.37px;
+  }
+
+  .design_3 {
+    right: 328.22px;
+    top: 31px;
+    width: 32.56px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .banner {
+    width: 91.5384615%;
+    height: 45px;
+    top: 40px;
+  }
+
+  .banner a {
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:389px) {
+  .banner a {
+    font-size: 12px;
+  }
+}

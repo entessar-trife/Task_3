@@ -1,0 +1,86 @@
+.contentCardComponent {
+  width: 31.57894%;
+  padding: 80px 50px 50px 50px;
+  position: relative;
+  background-color: var(--white-color);
+  transition: .5s ease-in-out;
+}
+
+.contentCardComponent:hover {
+  transform: scale(1.1);
+}
+
+.contentCardComponent .titleComponent {
+  margin-bottom: 135px;
+}
+
+.contentCardComponent .contentCardTitle img {
+  background-color: var(--Orange-90);
+  padding: 20px;
+  border-radius: 12px;
+  position: absolute;
+  top: -37px;
+  left: 30px;
+}
+
+.contentCardComponent .contentCardTitle h3 {
+  font-family: var(--raleway-font);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.contentCardComponent p {
+  color: var(--gray-30);
+}
+
+/* start responsive */
+@media (max-width:1919px) {
+
+  /* figma design */
+
+  .contentCardComponent .titleComponent {
+    margin-bottom: 108px;
+  }
+
+  .contentCardComponent {
+    width: 31.25%;
+    padding: 60px 40px 40px 40px;
+  }
+
+
+  .contentCardComponent .contentCardTitle img {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .contentCardComponent .contentCardTitle h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width:992px) {
+
+  /* figma design */
+  .contentCardComponent .titleComponent {
+    margin-bottom: 78px;
+  }
+
+  .contentCardComponent {
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+  }
+
+  .contentCardComponent .contentCardTitle h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width:389px) {
+  .contentCardComponent .contentCardTitle h3 {
+    font-size: 16px;
+  }
+
+}
