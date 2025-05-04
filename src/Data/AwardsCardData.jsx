@@ -1,6 +1,6 @@
 export const AwardsCardData = [
   {
-    imgSrc: "/Task_2_3/images/Awards/Icon(1).png",
+    imgSrc: "/Task_3/images/Awards/Icon(1).png",
     title: "Outstanding Early Childhood Education Award",
     desc: "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
   },
